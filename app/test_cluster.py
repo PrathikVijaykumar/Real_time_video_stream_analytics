@@ -5,8 +5,8 @@ from databricks.sdk import WorkspaceClient
 # from databricks.sdk.service import jobs
 # from databricks.sdk.service import compute
 
-client = WorkspaceClient(host='https://dbc-36749aba-9ce7.cloud.databricks.com',
-                    token='dapi5e26c901a014ed8c0f7703f12998931d',)
+client = WorkspaceClient(host='https://dbc-XXXXX.cloud.databricks.com',
+                    token='XXXXXXX',)
                     #account_id='5dd99c18-a90c-4861-b731-6c8886dd7d14',
                     #username='vprathik3010@gmail.com',password='Pilot@1964')
                     #host = workspace_URL
@@ -30,8 +30,8 @@ def terminate_cluster(cluster_id):
     endpoint = f"/api/2.0/clusters/delete"
     
     # Define the URL for the Databricks API
-    domain = 'https://dbc-36749aba-9ce7.cloud.databricks.com' ### workspace_URL
-    token = 'dapi5e26c901a014ed8c0f7703f12998931d'
+    domain = 'https://dbc-XXXXX.cloud.databricks.com' ### workspace_URL
+    token = 'XXXXXXX'
 
     headers = {'Content-Type': 'application/json;charset=UTF-8',
                 'Authorization': f'Bearer {token}'}
@@ -59,8 +59,8 @@ def start_cluster(cluster_id):
     endpoint = f"/api/2.0/clusters/start"
     
     # Define the URL for the Databricks API
-    domain = 'https://dbc-36749aba-9ce7.cloud.databricks.com' ### workspace_URL
-    token = 'dapi5e26c901a014ed8c0f7703f12998931d'
+    domain = 'https://dbc-XXXXX.cloud.databricks.com' ### workspace_URL
+    token = 'XXXXXXX'
 
     headers = {'Content-Type': 'application/json;charset=UTF-8',
                 'Authorization': f'Bearer {token}'}

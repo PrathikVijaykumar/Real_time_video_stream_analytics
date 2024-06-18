@@ -34,33 +34,10 @@ The Real-Time Video Stream Analytics application is a robust full-stack web appl
 - Power BI Account
 - Snowflake Account
 
-### Setup Instructions
-1. **Clone the Repository:**
-   ```bash
-   git clone [repository-url]
-   cd real-time-video-stream-analytics
-   ```
-
-2. **Docker:**
-   Build and run the application using Docker.
-   ```bash
-   docker build -t video-analytics-app .
-   docker run -p 8501:8501 video-analytics-app
-   ```
-
-3. **AWS Configuration:**
-   Configure your AWS credentials to access S3.
-   ```bash
-   aws configure
-   ```
-
-4. **Environment Variables:**
-   Set the required environment variables for Databricks, Snowflake, and Power BI.
-
 ## Usage
 
 1. **Starting the Application:**
-   Access the application through your browser at `http://localhost:8501` if running locally, or use the public EC2 instance URL.
+   Access the application through your browser at `http://52.12.53.176:8501/` if running locally, or use the public EC2 instance URL.
 
 2. **Uploading Videos:**
    Use the interface to upload vehicular traffic videos for processing.
@@ -78,12 +55,6 @@ The Real-Time Video Stream Analytics application is a robust full-stack web appl
 - **Data Visualization:** Power BI
 - **Deployment:** AWS EC2
 
-## Contributing
 
-Interested in contributing? We welcome contributions from developers of all skill levels. Please fork the repository and submit your pull requests. For major changes, please open an issue first to discuss what you would like to change.
-
-Please ensure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+## gitlab repo - for CICD
+https://gitlab.com/real_time_stream_video/real_time_video

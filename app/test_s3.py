@@ -4,8 +4,8 @@ import boto3
 s3_client = boto3.client(
     service_name='s3',
     region_name='us-west-2',
-    aws_access_key_id='AKIAYEQZEJ7WMOWM66FY',
-    aws_secret_access_key='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'
+    aws_access_key_id='XXXX',
+    aws_secret_access_key='XXXXX'
 )
 
 # Print out bucket names
