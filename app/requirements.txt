@@ -1,0 +1,6 @@
+flask
+streamlit
+databricks-sdk
+boto3
+pytest
+matplotlib
